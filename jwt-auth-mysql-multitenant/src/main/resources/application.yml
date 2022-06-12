@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    username: root
+    driverClassName: com.mysql.jdbc.Driver
+    password: mysql
+    url: jdbc:mysql://localhost:3306
+  jpa:
+    generate-ddl: 'true'
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+jwt:
+  secret: sudhs22
+tenants:
+  datasources:
+    tenantA:
+      id: tenantA
+      url: jdbc:mysql://localhost:3306/tenantA
+      username: root
+      password: mysql
+      driverClassName: com.mysql.jdbc.Driver
+    tenantB:
+      id: tenantB
+      url: jdbc:mysql://localhost:3306/tenantB
+      username: root
+      password: mysql
+      driverClassName: com.mysql.jdbc.Driver
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

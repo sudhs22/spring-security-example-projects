@@ -1,0 +1,10 @@
+com\example\security\config\CustomWebSecurityConfigAdapter.class
+com\example\security\config\DataSourceConfig.class
+com\example\security\repository\UserRepository.class
+com\example\security\config\MyBasicAuthenticationEntryPoint.class
+com\example\security\repository\RoleRepository.class
+com\example\security\entity\Role.class
+com\example\security\service\CustomUserDetailsService.class
+com\example\security\controller\TestController.class
+com\example\security\entity\User.class
+com\example\security\JwtAuthenticationApplication.class
